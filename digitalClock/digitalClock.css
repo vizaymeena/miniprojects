@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(50deg,rgb(9, 23, 71),rgb(145, 18, 79));
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#title_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgray;
+}
+
+#container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#birth_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+#birth_div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+}
+/*==================================================================================================*/
+
+/* Birth Year Text */
+.birth_name{
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Birth Year text end. */
+
+/* Input Year Field */
+#inputyear{
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    outline: none;
+    color: snow;
+    background: linear-gradient(180deg,rgb(42, 166, 188),rgb(72, 103, 146)) ;
+   font-size: large;
+}
+/* Input Field Ends. */
+
+/* Check Button Starts */
+#btn{
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid green;
+    color: white;
+    background-color: green;
+    transition: 1.5s all ease;
+}
+#btn:hover{
+    color: white;
+    background-color: darkgreen;
+    border: 2px solid white;
+}
+/* Check button Ends. */
+
+/* Output div */
+#output{
+    color: green;
+    font-size: 20px;
+}
+/* Output Div Ends. */
