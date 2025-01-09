@@ -5,26 +5,27 @@ let check=()=>{
     let output = document.querySelector("#output")
     let timee = new Date();
     let currentyear = timee.getFullYear();
-    let inputyear = parseInt(document.querySelector("#inputyear").value).length;
+    let inputyear = document.querySelector("#inputyear").value.trim();
+    let inputyear2 = parseInt(inputyear)
     let year = currentyear-inputyear;
     
-    if(!year || isNaN(inputyear) || inputyear>currentyear || inputyear.length!==4){
+    if(!inputyear || isNaN(inputyear2) || inputyear>currentyear || inputyear.length!==4)
+      {
         output.style.color="red"
+        output.innerHTML="Please, Enter a valid year."
 
-        // Text Styling Starts   .... Via Classlist
-        output.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"
-        output.style.borderColor= "2px solid Red"
-        // Text Styling Ends
-
-
-        /* Reloading Page if number length is not equal to 4 digit */
+      
+         /* Reloading Page if number length is not equal to 4 digit */
          setTimeout(()=>{
-            location.reload()
-         },2000)
+          location.reload()
+          },2000)
+
+        return;
+
+       
         /* ---------------------------------------------------------- */
          
-        output.innerHTML="Please, Enter a valid year."
-        return;
+       
     }
      /* When Everything is processed accordingly this will work out */
      output.style.color="green"
