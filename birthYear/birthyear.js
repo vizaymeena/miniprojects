@@ -31,7 +31,7 @@ let check=()=>{
      output.innerHTML=`You are ${year} Years old.`;
 }
 
-    // Ends.
+  // Ends.
 
 
 // bug:: number of years in input field must be of 4 digits , how to make it?
