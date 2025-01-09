@@ -3,25 +3,23 @@ const dicecontainer = document.querySelector("#dicecontainer")
 
 // Game Greeting message starts ..
 
+     // Greeting Statement ...
 
+// Game Greeting message ends  .. 
 
-
-// Game Greeting message ends  ..
-
-let roll=()=>{
+    let roll=()=>{
     
     // display
     // Roll function
     let dice = Math.floor(Math.random() * 6) + 1
-  
+    
     let box1 = document.querySelector("#box1")
     let box2 = document.querySelector("#box2")
     let box3 = document.querySelector("#box3")
     let box4 = document.querySelector("#box4")
     let box5 = document.querySelector("#box5")
     let box6 = document.querySelector("#box6")
-       
-   
+    
     // box 1
     if(dice==1){
          box1.style.opacity = 1
@@ -78,6 +76,7 @@ let roll=()=>{
     }
   }
 
+
   /* Exit Function Starts */
 let exit=()=>{
    
@@ -99,7 +98,7 @@ let exit=()=>{
 
     setTimeout(()=>{
         location.reload()     // Reloading page in 5s after ending game
-    },3000)
+    },4000)
 }
 /* Exit Function Ends */
 
