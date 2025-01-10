@@ -1,0 +1,50 @@
+<!-- Calculator -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <!-- Output -->
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button class="btn" onclick="calc('7')">7</button>
+            <button class="btn" onclick="calc('8')">8</button>
+            <button class="btn" onclick="calc('9')">9</button>
+
+            <button class="btn operator" onclick="calc('/')">/</button>
+
+            <!-- Row 2 -->
+            <button class="btn" onclick="calc('4')">4</button>
+            <button class="btn" onclick="calc('5')">5</button>
+            <button class="btn" onclick="calc('6')">6</button>
+
+            <button class="btn operator" onclick="calc('*')">*</button>
+
+            <!-- Row 3 -->
+            <button class="btn" onclick="calc('1')">1</button>
+            <button class="btn" onclick="calc('2')">2</button>
+            <button class="btn" onclick="calc('3')">3</button>
+
+            <button class="btn operator" onclick="calc('-')">-</button>
+
+            <!-- Row 4 -->
+            <button class="btn" onclick="calc('0')">0</button>
+
+            <!-- Clear Fucntion -->
+            <button id="cleardisplay" class="btn" onclick="clearDisplay()">C</button>
+
+            <!-- Calculate Function -->
+            <button class="btn operator" onclick="calculate()">=</button>
+            <!-- Plus Operator -->
+            <button class="btn operator" onclick="calc('+')">+</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
