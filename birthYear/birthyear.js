@@ -8,8 +8,14 @@ let check=()=>{
     let inputyear = document.querySelector("#inputyear").value.trim();
     let inputyear2 = parseInt(inputyear)
     let year = currentyear-inputyear;
+
     
-    if(!inputyear || isNaN(inputyear2) || inputyear>currentyear || inputyear.length!==4)
+      if(inputyear.length!=4 ){
+        alert("Input Year should be valid")
+        return false
+      }
+    
+    else if(!inputyear || isNaN(inputyear2) || inputyear>currentyear || inputyear.length!==4)
       {
         output.style.color="red"
         output.innerHTML="Please, Enter a valid year."
